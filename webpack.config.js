@@ -1,8 +1,9 @@
 var path = require('path');
 
-var imagePath = path.resolve(__dirname, '../images'),
+var imagePath = path.resolve(__dirname, './images'),
     spriteOutput = imagePath;
 
+console.log(imagePath);
 module.exports = {
     entry: "./entry.js",
     output: {
