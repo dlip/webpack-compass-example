@@ -1,0 +1,9 @@
+@import "compass";
+
+$icons: sprite-map("*.png");
+
+body {
+  background-image: sprite-url($icons);
+  background-position: sprite-position($icons, bold);
+  @include sprite-dimensions($icons, bold);
+}

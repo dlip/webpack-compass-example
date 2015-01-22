@@ -1,0 +1,17 @@
+{
+  "name": "webpack-compass-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compass-loader": "0.0.3",
+    "css-loader": "^0.9.1",
+    "style-loader": "^0.8.3",
+    "webpack": "^1.5.3"
+  }
+}
