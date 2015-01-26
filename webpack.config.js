@@ -21,8 +21,9 @@ module.exports = {
                 "includePaths[]=" +
                   (path.resolve(__dirname, "./node_modules")) + "&" +
                   "imagePath=" + imagePath + "&" +
-                  "spriteOutput=" + spriteOutput
-            }
+                  "spriteOutput=" + __dirname
+            },
+            { test: /\.png$/, loader: "url-loader?name=images/[hash].png&limit=10mimetype=image/png" }
         ]
     }
 };
