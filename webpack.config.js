@@ -15,13 +15,14 @@ module.exports = {
             {
               test: /\.scss$/,
               // Query parameters are passed to node-sass
-              loader: "style!css!compass?outputStyle=expanded&" +
+              loader: "style!raw!compass?outputStyle=expanded&" +
                 "includePaths[]=" +
                   (path.resolve(__dirname, "./bower_components")) + "&" +
                 "includePaths[]=" +
                   (path.resolve(__dirname, "./node_modules")) + "&" +
                   "imagePath=" + imagePath + "&" +
-                  "spriteOutput=" + __dirname
+                  "httpImagesPath=/images" + "&" +
+                  "spriteOutput=" + imagePath
             },
             { test: /\.png$/, loader: "url-loader?name=images/[hash].png&limit=10mimetype=image/png" }
         ]
